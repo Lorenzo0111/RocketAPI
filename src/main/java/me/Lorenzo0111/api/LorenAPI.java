@@ -12,6 +12,7 @@ public final class LorenAPI extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Enabling LorenAPI v" + this.getDescription().getVersion());
         instance = this;
+        this.hook();
     }
 
     @Override
