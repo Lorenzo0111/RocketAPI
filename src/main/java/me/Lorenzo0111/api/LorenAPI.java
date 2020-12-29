@@ -6,14 +6,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class LorenAPI extends JavaPlugin {
 
-    public LorenAPI() {
-
-    }
+    private static LorenAPI instance;
 
     @Override
     public void onEnable() {
-
-
+        getLogger().info("Enabling LorenAPI v" + this.getDescription().getVersion());
+        instance = this;
     }
 
     @Override
@@ -23,6 +21,10 @@ public final class LorenAPI extends JavaPlugin {
 
     public void hook() {
         Bukkit.getPluginManager().registerEvents(new MenuListener(), this);
+    }
+
+    public static LorenAPI getInstance() {
+        return instance;
     }
 
 }

@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.Lorenzo0111</groupId>
-    <artifactId>LorenAPI</artifactId>
+    <artifactId>api</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>LorenAPI</name>
+    <name>api</name>
 
     <properties>
         <java.version>1.8</java.version>
@@ -51,6 +51,14 @@
             </resource>
         </resources>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>lorenzo0111</id>
+            <name>Lorenzo0111 Repository</name>
+            <url>https://repo.repsy.io/mvn/lorenzo0111/api</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
