@@ -24,11 +24,8 @@ public abstract class Command implements CommandExecutor {
      * @param args Command argouments
      */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        this.execute(sender, args);
         return true;
     }
-
-    public abstract void execute(CommandSender sender, String[] args);
 
     /**
      * @return if the sender is a player
