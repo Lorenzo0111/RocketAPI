@@ -9,7 +9,7 @@
 [![relase]][releaselink] [![issues]][issueslink]
 
 This is an API for Lorenzo0111 plugins.
-With this plugin you can create gui and more..
+With this api you can create gui and more..
 
 ## How to install
 **Maven**
