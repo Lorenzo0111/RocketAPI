@@ -31,7 +31,7 @@ public abstract class Configuration {
         }
 
         if (!file.exists()) {
-            plugin.getLogger().info("Generating " + fileName + ".yml file from LorenzoAPI");
+            plugin.getLogger().info("Generating " + fileName + ".yml file from RocketAPI");
             file.getParentFile().mkdirs();
             plugin.saveResource(fileName + ".yml", false);
         }

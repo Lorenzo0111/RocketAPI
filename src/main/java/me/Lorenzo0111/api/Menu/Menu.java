@@ -15,7 +15,7 @@ public abstract class Menu implements InventoryHolder {
 
     protected MenuUtility menuUtility;
     protected Inventory inventory;
-    protected ItemStack filler_glass = makeItem(Material.STAINED_GLASS_PANE,(short) 8, "");
+    protected ItemStack filler_glass = makeItem(Material.GRAY_STAINED_GLASS_PANE, "");
 
 
     /**
