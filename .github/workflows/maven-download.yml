@@ -17,5 +17,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: LorenzoAPI
-          path: api.jar
+          name: api-1.1
+          path: api-1.1.jar
