@@ -1,4 +1,4 @@
-name: LorenzoAPI
+name: RocketAPI
 version: ${project.version}
 main: me.Lorenzo0111.api.LorenAPI
 author: Lorenzo0111
