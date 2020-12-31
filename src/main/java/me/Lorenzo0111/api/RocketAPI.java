@@ -10,7 +10,7 @@ public final class RocketAPI extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Enabling LorenAPI v" + this.getDescription().getVersion());
+        getLogger().info("Enabling RocketAPI v" + this.getDescription().getVersion());
         instance = this;
         this.register();
     }
