@@ -13,17 +13,21 @@ public final class LorenAPI extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Enabling LorenAPI v" + this.getDescription().getVersion());
         instance = this;
-        this.hook();
+        this.register();
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
     }
 
-    public void hook() {
+    public void register() {
         Bukkit.getPluginManager().registerEvents(new MenuListener(), this);
         Bukkit.getPluginManager().registerEvents(new CommandListener(), this);
+    }
+
+    public void hook(JavaPlugin plugin) {
+        this.getLogger().info("Hooked with " + plugin.getDescription().getName() );
     }
 
     public static LorenAPI getInstance() {
