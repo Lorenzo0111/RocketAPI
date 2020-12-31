@@ -46,4 +46,4 @@ Replace version with ![relase]
 
 ## How to use
 
-Read my wiki for more informations!
+[Read my wiki for more informations!](https://docs.rocketplugins.space/api)
