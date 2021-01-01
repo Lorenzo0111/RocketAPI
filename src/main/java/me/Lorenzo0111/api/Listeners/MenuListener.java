@@ -19,7 +19,7 @@ public class MenuListener implements Listener {
 
             Menu menu = (Menu) holder;
 
-            if (event.getCurrentItem().equals(menu.getFillerGlass())) {
+            if (event.getCurrentItem().equals(menu.getFILLER())) {
                 event.setCancelled(true);
                 return;
             }

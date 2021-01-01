@@ -15,7 +15,7 @@ public abstract class Menu implements InventoryHolder {
 
     protected MenuUtility menuUtility;
     protected Inventory inventory;
-    protected ItemStack filler_glass = makeItem(Material.GRAY_STAINED_GLASS_PANE, "");
+    protected ItemStack FILLER = makeItem(Material.GRAY_STAINED_GLASS_PANE, "");
 
 
     /**
@@ -70,7 +70,7 @@ public abstract class Menu implements InventoryHolder {
     public void setFillerGlass(){
         for (int i = 0; i < getSlots(); i++) {
             if (inventory.getItem(i) == null){
-                inventory.setItem(i, filler_glass);
+                inventory.setItem(i, FILLER);
             }
         }
     }
@@ -99,7 +99,7 @@ public abstract class Menu implements InventoryHolder {
         return item;
     }
 
-    public ItemStack getFillerGlass() {
-        return filler_glass;
+    public ItemStack getFILLER() {
+        return FILLER;
     }
 }
