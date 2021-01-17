@@ -4,6 +4,7 @@ import me.Lorenzo0111.api.Listeners.MenuListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+@SuppressWarnings("unused")
 public final class RocketAPI extends JavaPlugin {
 
     private static RocketAPI instance;

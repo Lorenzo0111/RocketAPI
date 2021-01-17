@@ -2,6 +2,7 @@ package me.Lorenzo0111.api.Chat;
 
 import org.bukkit.ChatColor;
 
+@SuppressWarnings("unused")
 public class MessageBuilder {
 
     private String message;

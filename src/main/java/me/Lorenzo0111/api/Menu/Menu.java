@@ -6,20 +6,17 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.Arrays;
-
+@SuppressWarnings("unused")
 public abstract class Menu implements InventoryHolder {
 
 
     protected MenuUtility menuUtility;
     protected Inventory inventory;
-    protected ItemStack FILLER = makeItem(Material.GRAY_STAINED_GLASS_PANE, "");
-
+    protected MenuFiller filler;
 
     /**
-     * @param menuUtility menu informations
+     * @param menuUtility menu information
      */
     public Menu(MenuUtility menuUtility) {
         this.menuUtility = menuUtility;
@@ -46,7 +43,10 @@ public abstract class Menu implements InventoryHolder {
      */
     public abstract void setMenuItems();
 
-    //When called, an inventory is created and opened for the player
+
+    /**
+     * Open the GUI
+     */
     public void open() {
         //The owner of the inventory created is the Menu itself,
         // so we are able to reverse engineer the Menu object from the
@@ -60,46 +60,36 @@ public abstract class Menu implements InventoryHolder {
         menuUtility.getOwner().openInventory(inventory);
     }
 
-    //Overridden method from the InventoryHolder interface
+
+    /**
+     * @return inventory
+     */
     @Override
     public Inventory getInventory() {
         return inventory;
     }
 
-    //Helpful utility method to fill all remaining slots with "filler glass"
-    public void setFillerGlass(){
-        for (int i = 0; i < getSlots(); i++) {
-            if (inventory.getItem(i) == null){
-                inventory.setItem(i, FILLER);
-            }
+    public MenuFiller getFiller() {
+        if (filler == null) {
+            filler = new MenuFiller(this, ItemBuilder.createItem(Material.GRAY_STAINED_GLASS_PANE).setName("§7").build());
         }
+
+        return filler;
     }
 
-    public ItemStack makeItem(Material material, String displayName, String... lore) {
-
-        ItemStack item = new ItemStack(material);
-        ItemMeta itemMeta = item.getItemMeta();
-        itemMeta.setDisplayName(displayName);
-
-        itemMeta.setLore(Arrays.asList(lore));
-        item.setItemMeta(itemMeta);
-
-        return item;
+    /**
+     * @param index item position
+     * @param item item
+     */
+    public void setItem(int index, ItemStack item) {
+        inventory.setItem(index, item);
     }
 
-    public ItemStack makeItem(Material material, short id, String displayName, String... lore) {
-
-        ItemStack item = new ItemStack(material, id);
-        ItemMeta itemMeta = item.getItemMeta();
-        itemMeta.setDisplayName(displayName);
-
-        itemMeta.setLore(Arrays.asList(lore));
-        item.setItemMeta(itemMeta);
-
-        return item;
+    /**
+     * @param item item
+     */
+    public void addItem(ItemStack item) {
+        inventory.addItem(item);
     }
 
-    public ItemStack getFILLER() {
-        return FILLER;
-    }
 }

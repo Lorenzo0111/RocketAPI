@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+@SuppressWarnings("unused")
 public abstract class Configuration {
 
     protected YamlConfiguration configuration;
