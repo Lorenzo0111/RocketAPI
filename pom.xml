@@ -6,7 +6,7 @@
 
     <groupId>me.Lorenzo0111</groupId>
     <artifactId>api</artifactId>
-    <version>1.3</version>
+    <version>1.4</version>
     <packaging>jar</packaging>
 
     <name>api</name>
