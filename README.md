@@ -8,7 +8,7 @@
 
 [![relase]][releaselink] [![issues]][issueslink]
 
-This is an API for Lorenzo0111 plugins.
+This is an API for create minecraft plugins.
 With this api you can create gui and more..
 
 ## How to install
