@@ -1,4 +1,4 @@
-package me.Lorenzo0111.api.Command;
+package me.lorenzo0111.api.command;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

@@ -1,6 +1,6 @@
-package me.Lorenzo0111.api;
+package me.lorenzo0111.api;
 
-import me.Lorenzo0111.api.Listeners.MenuListener;
+import me.lorenzo0111.api.listeners.MenuListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,11 +14,6 @@ public final class RocketAPI extends JavaPlugin {
         getLogger().info("Enabling RocketAPI v" + this.getDescription().getVersion());
         instance = this;
         this.register();
-    }
-
-    @Override
-    public void onDisable() {
-
     }
 
     public void register() {

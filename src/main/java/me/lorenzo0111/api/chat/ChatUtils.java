@@ -1,9 +1,9 @@
-package me.Lorenzo0111.api.Chat;
+package me.lorenzo0111.api.chat;
 
 import org.bukkit.ChatColor;
 
 @SuppressWarnings("unused")
-public class ChatUtility {
+public class ChatUtils {
 
     public static String colorize(String string) {
         return ChatColor.translateAlternateColorCodes('&', string);

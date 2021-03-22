@@ -1,4 +1,4 @@
-package me.Lorenzo0111.api.Menu;
+package me.lorenzo0111.api.menu;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

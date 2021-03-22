@@ -1,6 +1,6 @@
-package me.Lorenzo0111.api.Listeners;
+package me.lorenzo0111.api.listeners;
 
-import me.Lorenzo0111.api.Menu.Menu;
+import me.lorenzo0111.api.menu.Menu;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;

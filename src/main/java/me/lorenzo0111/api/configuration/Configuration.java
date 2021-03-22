@@ -1,4 +1,4 @@
-package me.Lorenzo0111.api.Configuration;
+package me.lorenzo0111.api.configuration;
 
 import com.google.common.base.Charsets;
 import org.bukkit.configuration.InvalidConfigurationException;

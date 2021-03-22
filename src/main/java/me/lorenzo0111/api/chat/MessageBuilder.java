@@ -1,4 +1,4 @@
-package me.Lorenzo0111.api.Chat;
+package me.lorenzo0111.api.chat;
 
 import org.bukkit.ChatColor;
 
