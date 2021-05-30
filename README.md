@@ -17,7 +17,7 @@ With this api you can create gui and more.
 ```xml
 
 <dependency>
-    <groupId>me.lorenzo0111me.lorenzo0111</groupId>
+    <groupId>me.lorenzo0111</groupId>
     <artifactId>api</artifactId>
     <version>VERSION</version>
 </dependency>
