@@ -2,6 +2,8 @@
 
 [![release]][releaseLink] [![issues]][issuesLink] [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8a687bda4c554c2d9ff5d09b7bb30f50)](https://www.codacy.com/gh/Lorenzo0111/RocketAPI/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Lorenzo0111/RocketAPI&amp;utm_campaign=Badge_Grade)
 
+> This repo has been deprecated. Use [FoxPowered/PluginsLib](https://github.com/FoxPowered/PluginsLib) instead or [TriumphTeam/triumph-gui](https://github.com/TriumphTeam/triumph-gui) for the guis.
+
 This is an API for create minecraft plugins.
 With this api you can create gui and more.
 
@@ -36,7 +38,7 @@ repositories {
 }
 ```
 
-Replace version with ![relase]
+Replace version with ![release]
 
 *[Remember to download and install the plugin on the server](https://github.com/Lorenzo0111/RocketAPI/releases/latest)*
 
